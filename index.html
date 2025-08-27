@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="Paper on adaptive control placement for IoT closed-loop systems. MILCOM 2023. Authors: Pragya Sharma and Mani Srivastava. Evaluates local vs cloud control using a PyBullet-based vehicle following simulation.">
+  <meta name="keywords" content="IoT, adaptive control, cloud computing, real-time systems, latency, MPC, PID, MILCOM 2023, PyBullet simulation, distributed control, Pragya Sharma, UCLA">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="https://sharma-pragya.github.io/distributed-control-site/"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Impact of Delays and Computation Placement on Sense-Act Application Performance in IoT</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Impact of Delays and Computation Placement on Sense-Act Application Performance in IoT</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?hl=en&user=Jra7ZnsAAAAJ" target="_blank">Pragya Sharma, </a>
+                  <!-- <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
+                  <span class="author-block"> -->
+                    <a href="https://scholar.google.com/citations?user=X2Qs7XYAAAAJ&hl=en" target="_blank">Mani B. Srivastava</a>
+                  </span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block">University of California Los Angeles<br>MILCOM 2023</span>
+                    <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="https://ieeexplore.ieee.org/document/10356219" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+                        <!-- Supplementary PDF link -->
+                         <!-- <span class="link-block">
+                          <a href="static/pdfs/supplementary_material.pdf" target="_blank"
+                          class="external-link button is-normal is-rounded is-dark">
+                          <span class="icon">
+                            <i class="fas fa-file-pdf"></i>
+                          </span>
+                          <span>Supplementary</span>
+                        </a>
+                      </span> -->
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/nesl/Research-PragyaSharma/tree/main/Distributed_Control/Adaptive_Control_Exps/PyBullet" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <!-- ArXiv abstract Link -->
+                <!-- <span class="link-block">
+                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span> -->
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Teaser video-->
+<!-- <section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <source src="static/videos/banner_video.mp4"
+        type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+      </h2>
+    </div>
+  </div>
+</section> -->
+<!-- End teaser video -->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            This paper investigates the challenges posed by delays in Closed-Loop Sense-Act Systems in the context of Adversarial Internet of Things (IoT) applications. Prior work focused on studying the impact of delays on a single resource-constrained platform. To capitalize on the capabilities of different computing platforms, this work investigates the adaptation of control placement to optimize application performance in distributed settings. An Adaptive Control Placement (ACP) strategy is introduced, which dynamically switches between a local controller with lower accuracy and a cloud controller with higher accuracy based on network dynamics, optimizing overall application performance. The effectiveness of the ACP strategy is evaluated using a simulated Vehicle Following application in the PyBullet simulator. The results demonstrate that in terms of a time-to-complete (TTC) metric, the ACP strategy consistently outperforms strategies that use a fixed combination of controller type and location (e.g., PID at Local and MPC at Cloud) across various deadline scenarios.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+  <section class="section hero is-small">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full">
+        <h2 class="title is-3">Delays in Sense-Act Systems</h2>
+        <div class="content has-text-justified">
+          <p>
+          Each module within the closed-loop Sense-Act system introduces its own computational delay (<em>d<sub>1</sub></em>, <em>d<sub>2</sub></em>, and <em>d<sub>3</sub></em>), collectively influencing the overall application performance by shaping the accuracy-latency trade-off. Typically, system designs accommodate these delays by adopting a worst-case approach, where sensing and actuation are scheduled at fixed intervals that exceed the cumulative worst-case delays of <em>d<sub>1</sub></em>, <em>d<sub>2</sub></em>, and <em>d<sub>3</sub></em>. Alternatively, some systems adopt hybrid configurations, wherein sensing occurs at predetermined intervals while actuation is triggered as soon as the corresponding action is computed. This interplay between module-specific delays and the timing configurations for sensing and actuation has a significant impact on application performance, influencing both responsiveness and accuracy.
+          </p>
+          <figure>
+        <img src="static/images/Figure1.png" alt="intro", style="max-width:75%; height:auto;">
+        <figcaption>Visualization of closed-loop Sense-Act Systems with module delays <em>d<sub>1</sub></em> , <em>d<sub>2</sub></em> , and <em>d<sub>3</sub></em> .</figcaption>
+        </figure>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full">
+        <h2 class="title is-3">System Design</h2>
+        <div class="content has-text-justified">
+          <p>
+          To demonstrate the placement of control in a distributed setting, we consider two execution locations for the control algorithm: local and cloud. Local control refers to an on-device controller, directly connected to the device's sensors via a low-latency link but constrained by limited computational resources due to its deployment on a resource-limited platform. In contrast, cloud control represents a remote controller equipped with significantly greater computational capabilities but connected to the device through a high-latency network link.
+          </p>
+          <p>
+          This architecture is implemented for a Vehicle Following application using a simulated F1/10 racecar  and its environment in the Pybullet simulator. The simulation runs on a MacBook Pro and is connected to the local controller, a Raspberry Pi 4B, via Ethernet, collectively representing the vehicular network. The cloud controller, hosted on an Amazon AWS EC2 (N. California) instance, communicates with the vehicular network over Wi-Fi. This setup provides a representative framework to evaluate the trade-offs between low-latency local control and high-computation cloud-based control in distributed control systems.
+          </p>
+          <figure>
+        <img src="static/images/Figure2.png" alt="intro", style="max-width:70%; height:auto;">
+        <figcaption>System Setup with Local and Cloud control locations.</figcaption>
+        </figure>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section class="section hero is-small">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full">
+        <h2 class="title is-3">Evaluation Results</h2>
+        <div class="content has-text-justified">
+          <h3 class="title is-4">Controller Performance</h3>
+          <div class="content has-text-justified">
+          <figure>
+        <img src="static/images/Figure3.png" alt="math", style="max-width:100%; height:auto;">
+        <figcaption>Application performance of PID and MPC controllers with Local and Cloud deployment under various actuation deadlines. While Local PID finishes faster than Cloud MPC, the latter has lower trajectory tracking error (denoted by bar labels).</figcaption>
+        </figure>
+        </div>
+        <h3 class="title is-4">Adaptive Control Placement (ACP)</h3>
+        <div class="content has-text-justified">
+        <figure>
+        <img src="static/images/Figure4.png" alt="math", style="max-width:70%; height:auto;">
+        <figcaption>Distributed architecture of Adaptive Control Placement strategy.</figcaption>
+        </figure>
+        <p>
+          Our findings indicate that the optimal performance is achieved by deploying PID on-device and MPC in the cloud. Building on this insight, we design a distributed system employing an Adaptive Control Placement (ACP) strategy, illustrated above. In this framework, the computationally intensive MPC is hosted on the high-latency but faster cloud platform, while the simpler PID controller resides on the low-latency, resource-constrained local device. While MPC is preferred for its higher accuracy, the system seamlessly switches to PID during periods of elevated network latency, ensuring continuous and reliable control.
+        </p>
+        </div>
+        <h3 class="title is-4">ACP Performance</h3>
+        <div class="content has-text-justified">
+        <figure>
+        <img src="static/images/Figure5.png" alt="math", style="max-width:70%; height:auto;">
+        <figcaption>Application Performance of Adaptive Control Placement strategy. ACP outperforms Local PID and Cloud MPC in terms of time-to-complete. Tracking error of ACP (denoted by bar labels) lies in between that of PID and MPC.</figcaption>
+        </figure>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Youtube video -->
+<!-- <section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Video Presentation</h2>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          
+          <div class="publication-video">
+            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- End youtube video -->
+
+
+<!-- Paper poster -->
+<!-- <section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title">Poster</h2>
+
+      <img  src="static/pdfs/poster.png" alt="Poster", style="max-width:100%; height:auto;">
+          </img>
+        
+      </div>
+    </div>
+  </section> -->
+<!--End paper poster -->
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@inproceedings{sharma2023impact,
+                  title={Impact of Delays and Computation Placement on Sense-Act Application Performance in IoT},
+                  author={Sharma, Pragya and Srivastava, Mani B},
+                  booktitle={MILCOM 2023-2023 IEEE Military Communications Conference (MILCOM)},
+                  pages={133--138},
+                  year={2023},
+                  organization={IEEE}}
+      </code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
